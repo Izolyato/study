@@ -1,16 +1,40 @@
-﻿// Magik
+﻿// Магичный трэугольник
 Console.Clear();
-//Console.SetCursorPosition(10,4);
-//Console.WriteLine("*");
-int xa = 13;
-int ya = 1;
+//Console.SetCursorposition(10,4);
+//Console.WriteLine("=");
+int xa = 15;
+int ya = 5;
 int xb = 1;
-int yb = 10;
-int xc = 25;
-int yc = 10;
+int yb = 15;
+int xc = 30;
+int yc = 15;
 Console.SetCursorPosition(xa,ya);
-Console.WriteLine("*");
+Console.WriteLine("+");
 Console.SetCursorPosition(xb,yb);
-Console.WriteLine("*");
+Console.WriteLine("+");
 Console.SetCursorPosition(xc,yc);
-Console.WriteLine("*");
+Console.WriteLine("+");
+int x=xa, y=xb;
+int count = 0;
+while (count<1000)
+{
+    int what = new Random().Next(0,3);
+    if (what==0)
+    {
+        x=(x+xa)/2;
+        y=(y+ya)/2;
+    }
+    if (what==1)
+    {
+        x=(x+xb)/2;
+        y=(y+yb)/2;
+    }
+    if (what==2)
+    {
+        x=(x+xc)/2;
+        y=(y+yc)/2;
+    }
+    Console.SetCursorPosition(x,y);
+    Console.WriteLine("+");
+    count=count+1; //count+=1;  count++;
+}
