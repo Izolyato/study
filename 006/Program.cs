@@ -7,6 +7,6 @@ Console.WriteLine("Приветствую вас, Александр");
 }
 else
 {
-    Console.Write ("Пока  ");
-    Console.WriteLine (username);
+    Console.Write("Пока  ");
+    Console.WriteLine(username);
 }
