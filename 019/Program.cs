@@ -19,6 +19,8 @@ int number9 = Convert.ToInt32(Console.ReadLine());
 // if (max < number8) max = number8;
 // if (max < number9) max = number9;
 // Console.WriteLine($"Максимальное число --> {max}");
+
+// Вводм мотод Мах
 int Max(int arg1, int arg2, int arg3)
 {
     int result = arg1;
